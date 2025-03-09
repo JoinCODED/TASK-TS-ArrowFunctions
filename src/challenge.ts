@@ -12,8 +12,16 @@ import { square } from "./arrowFunctions";
  */
 
 // Comment out this function before starting your solution
-function squares(numbers: number[]): number[] {
-  return [0];
+// function squares(numbers: number[]): number[] {
+//   return [0];
+// }
+
+const squares = (numbers: number[]) => {
+  let numbersSquared: Array<number> =[];
+  numbers.forEach(function(value) {
+    numbersSquared.push(value ** 2);
+  });
+    return numbersSquared;
 }
 
 // example:
