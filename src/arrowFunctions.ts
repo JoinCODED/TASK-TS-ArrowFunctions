@@ -1,15 +1,17 @@
 /**
+ * Heba, Abdulrahman
  * Rewrite the following `greet` function as an arrow function
  * Before you start, **comment out** the existing `greet` function below
  * The arrow function must have the **same type declaration** as the original function
  */
 
 // Comment out this function before starting your solution
-function greet(name: string): string {
-  return `Hello ${name}`;
-}
+//function greet(name: string): string {
+//  return `Hello ${name}`;
+//}
 
 // example:
+const greet = (name:string) => {console.log(`Hello ${name}`); return `Hello ${name}`}
 greet("Aziz"); // => "Hello Aziz"
 
 /**
@@ -24,11 +26,12 @@ greet("Aziz"); // => "Hello Aziz"
  */
 
 // Comment out this function before starting your solution
-function sum(a: number, b: number): number {
-  return Infinity;
-}
+//function sum(a: number, b: number): number {
+//  return Infinity;
+//}
 
 // example:
+const sum = (a:number, b:number):number => a+b
 sum(5, 7); // => 12
 
 /**
@@ -41,11 +44,12 @@ sum(5, 7); // => 12
  */
 
 // Comment out this function before starting your solution
-function square(n: number): number {
-  return Infinity;
-}
+//function square(n: number): number {
+//  return Infinity;
+//}
 
 // example:
+const square = (n:number):number => n*n
 square(4); // => 16
 square(10); // => 100
 
