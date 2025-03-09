@@ -1,4 +1,5 @@
 // Why did we import this? 🤔
+import { E } from "@faker-js/faker/dist/airline-BcEu2nRk";
 import { square } from "./arrowFunctions";
 
 /**
@@ -12,9 +13,17 @@ import { square } from "./arrowFunctions";
  */
 
 // Comment out this function before starting your solution
-function squares(numbers: number[]): number[] {
-  return [0];
-}
+// function squares(numbers: number[]): number[] {
+//   return [0];
+// }
+
+const squares = (numbers: number[]): number[] => {
+  var result: number[] = [];
+  numbers.forEach((element) => {
+    result.push(element ** 2);
+  });
+  return result;
+};
 
 // example:
 squares([1, 2, 3]); // => [1, 4, 9]
