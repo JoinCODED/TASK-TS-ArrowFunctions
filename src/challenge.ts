@@ -12,9 +12,21 @@ import { square } from "./arrowFunctions";
  */
 
 // Comment out this function before starting your solution
-function squares(numbers: number[]): number[] {
-  return [0];
+// function squares(numbers: number[]): number[] {
+//   return [0];
+// }
+
+type SumFunction = (a: number[]) => number[];
+const squares : SumFunction = (a)  => {
+
+a.forEach(element => {
+  element = Math.pow(element, 2)
+});
+
+return a;
 }
+
+
 
 // example:
 squares([1, 2, 3]); // => [1, 4, 9]
