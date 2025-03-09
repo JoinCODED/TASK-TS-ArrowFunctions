@@ -12,9 +12,12 @@ import { square } from "./arrowFunctions";
  */
 
 // Comment out this function before starting your solution
-function squares(numbers: number[]): number[] {
-  return [0];
-}
+// function squares(numbers: number[]): number[] {
+//   numbers.forEach((n, i) => numbers[i] = n*n);
+//   return numbers
+// }
+
+const squares= (numbers: number[]):number[]  => numbers.map((x)=>square(x))
 
 // example:
 squares([1, 2, 3]); // => [1, 4, 9]
