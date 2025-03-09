@@ -5,9 +5,11 @@
  */
 
 // Comment out this function before starting your solution
-function greet(name: string): string {
-  return `Hello ${name}`;
-}
+// function greet(name: string): string {
+//   return `Hello ${name}`;
+// }
+type greetFunction = (name: string) => string;
+const greet : greetFunction = (name) => `Hello ${name}`;
 
 // example:
 greet("Aziz"); // => "Hello Aziz"
@@ -24,10 +26,12 @@ greet("Aziz"); // => "Hello Aziz"
  */
 
 // Comment out this function before starting your solution
-function sum(a: number, b: number): number {
-  return Infinity;
-}
+// function sum(a: number, b: number): number {
+//   return Infinity;
+// }
 
+type SumFunction = (a: number, b: number) => number;
+const sum : SumFunction = (a, b) => a + b;
 // example:
 sum(5, 7); // => 12
 
@@ -41,9 +45,13 @@ sum(5, 7); // => 12
  */
 
 // Comment out this function before starting your solution
-function square(n: number): number {
-  return Infinity;
-}
+// function square(n: number): number {
+//   return Infinity;
+// }
+
+type SquareFunction = (n: number) => number;
+const square : SquareFunction = (n) => Math.pow(n,2);
+
 
 // example:
 square(4); // => 16
