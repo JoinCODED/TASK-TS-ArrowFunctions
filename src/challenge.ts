@@ -20,7 +20,7 @@ import { square } from "./arrowFunctions";
 const squares = (numbers: number[]): number[] => {
   var result: number[] = [];
   numbers.forEach((element) => {
-    result.push(element ** 2);
+    result.push(square(element));
   });
   return result;
 };
